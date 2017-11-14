@@ -1,5 +1,5 @@
 <template>
-  <!--<div id="hello">
+  <div id="hello">
 
     <header class="ta-center container--lg">
       <a href="javascript:;" class="js-grid-toggle grid-toggle link__underline">Toggle Gridlines</a>
@@ -353,7 +353,7 @@
         </div>
       </div>
     </footer>
-  </div>-->
+  </div>
 </template>
 
 <script>

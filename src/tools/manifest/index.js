@@ -19,8 +19,8 @@ const _SEED = {
   start_url: _CONFIG.filenames.output.html,
   display: 'standalone',
   orientation: 'portrait',
-  background_color: _CONFIG.scssvars['$black-color'],
-  theme_color: _CONFIG.scssvars['$theme-color']
+  background_color: '#000000',
+  theme_color: '#FFFFFF'
 };
 
 module.exports = _SEED;

@@ -1,7 +1,6 @@
 const fs        = require('fs');
 const _PATH     = require('path');    
 const _ROOT     = `${_PATH.resolve(_PATH.join(__dirname, '../../../'))}/`;
-const _SCSSVARS = require('scss-to-json')(_ROOT + 'src/assets/scss/resources/variables/_variables.scss');
 const _PKG      = require('../../../package.json');
 const _APPNAME  = '' || (_PKG.name.charAt(0).toUpperCase() + _PKG.name.slice(1)).trim();
 const _ENV      = new function() {
@@ -89,7 +88,6 @@ const _SERVER = {
 
 const _CONFIG = {
   appname:      _APPNAME,
-  scssvars:     _SCSSVARS,
   env:          _ENV,    
   directories:  _DIRECTORIES,
   filenames:    _FILENAMES,
@@ -110,4 +108,4 @@ const _CONFIG = {
 };
 
 module.exports = _CONFIG;
-module.exports.prod = {appname: _APPNAME, scssvars: _SCSSVARS, env: _ENV, filenames: _FILENAMES.output};
+module.exports.prod = {appname: _APPNAME, env: _ENV, filenames: _FILENAMES.output};

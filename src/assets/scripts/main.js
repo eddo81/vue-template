@@ -4,7 +4,6 @@ import Vue        from 'vue';
 import App        from '@/App.vue';
 import Router     from '@/router/router.js';
 import Store      from '@/store/store.js';
-import FFO        from './FontFaceObserver';
 
 // Dynamically Import Global Components.
 const Radio     = () => import('@/components/_radio_btn.vue');
