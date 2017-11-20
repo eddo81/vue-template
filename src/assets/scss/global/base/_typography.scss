@@ -8,6 +8,7 @@
 
   h#{$i} {
     @extend %heading;
+    font-family: $font-family--heading;
     font-size: #{nth($font-size--headings, $i)};
 
     @if $i <= 3 {
