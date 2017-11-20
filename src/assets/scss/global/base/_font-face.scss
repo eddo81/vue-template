@@ -50,14 +50,3 @@
   font-style: normal;
   font-display: optional;
 }
-
-html[data-fonts-loaded="true"] body {
-  font-family: $font-family--base;
-
-   @for $i from 1 through length($font-size--headings) {
-
-    h#{$i} {
-      font-family: $font-family--heading;
-    }
-  }
-}
