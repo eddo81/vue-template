@@ -6,11 +6,11 @@ import Router     from '@/router/router.js';
 import Store      from '@/store/store.js';
 
 // Dynamically Import Global Components.
-const Radio     = () => import('@/components/_radio_btn.vue');
-const Checkbox  = () => import('@/components/_checkbox.vue');
-const Select    = () => import('@/components/_select.vue');
-const Textfield = () => import('@/components/_textfield.vue');
-const Textarea  = () => import('@/components/_textarea.vue');
+const Radio     = () => import(/* webpackChunkName: "component-radio" */ '@/components/_radio_btn.vue');
+const Checkbox  = () => import(/* webpackChunkName: "component-checkbox" */ '@/components/_checkbox.vue');
+const Select    = () => import(/* webpackChunkName: "component-select" */ '@/components/_select.vue');
+const Textfield = () => import(/* webpackChunkName: "component-textfield" */ '@/components/_textfield.vue');
+const Textarea  = () => import(/* webpackChunkName: "component-textarea" */ '@/components/_textarea.vue');
 
 Vue.config.productionTip = false;
 

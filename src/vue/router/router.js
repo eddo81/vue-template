@@ -8,7 +8,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Store from '@/store/store.js';
-import Home from '@/views/Home';
+
+const Home = () => import(/* webpackChunkName: "home-route" */ '@/views/Home');
 
 // Instantiate the Router
 Vue.use(VueRouter);

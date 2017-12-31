@@ -13,6 +13,8 @@ Object.keys(baseWebpackConfig.entry).forEach(function (name) {
 let webpackConfig = merge(baseWebpackConfig, {
   module: { rules: utils.styleLoaders({ sourceMap: false }) },
 
+  output: { chunkFilename: `[name].js` },
+
   plugins: [
     // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
     new webpack.HotModuleReplacementPlugin(),
