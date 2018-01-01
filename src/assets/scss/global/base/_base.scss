@@ -78,7 +78,7 @@ pre, code, samp, kbd, small, sub, sup {
 }
 
 pre, code, samp, kbd {
-  background-color: $grey-color;  
+  background-color: $grey-color;
   color: $theme-color--dark;
   font-family: $font-family--monospace;
 }
@@ -187,7 +187,6 @@ ol {
 
 ul {
   list-style-type: disc;
-  list-style-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle fill="#{$theme-color}" cx="12" cy="12" r="9"/></svg>');
 
   li {
     padding-left: ($baseline / 2);
@@ -204,9 +203,9 @@ dd {
 
 blockquote {
   margin: 0 0 $baseline 0;
-  border-left: ($baseline / 8) solid $theme-color; 
+  border-left: ($baseline / 8) solid $theme-color;
   padding: $baseline !important;
-  
+
   p:last-child {
     padding-bottom: 0;
   }

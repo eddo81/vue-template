@@ -8,20 +8,20 @@
   font-family: $icon-font;
   src: local('#{$icon-font}'),
        local('fontawesome-webfont'),
-       url('~fonts/#{$icon-font}/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-       url('~fonts/#{$icon-font}/fontawesome-webfont.woff?v=4.7.0') format('woff'),
-       url('~fonts/#{$icon-font}/fontawesome-webfont.ttf?v=4.7.0') format('truetype');
+       url('~assets/fonts/#{$icon-font}/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+       url('~assets/fonts/#{$icon-font}/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+       url('~assets/fonts/#{$icon-font}/fontawesome-webfont.ttf?v=4.7.0') format('truetype');
   font-weight: $font-weight--normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: $primary-font;
-  src: local('#{$primary-font}-Light'), 
+  src: local('#{$primary-font}-Light'),
        local('#{$primary-font} Light'),
-       url('~fonts/#{$primary-font}/#{$primary-font}-Light.woff2') format('woff2'),  
-       url('~fonts/#{$primary-font}/#{$primary-font}-Light.woff') format('woff'),
-       url('~fonts/#{$primary-font}/#{$primary-font}-Light.ttf') format('truetype');
+       url('~assets/fonts/#{$primary-font}/#{$primary-font}-Light.woff2') format('woff2'),
+       url('~assets/fonts/#{$primary-font}/#{$primary-font}-Light.woff') format('woff'),
+       url('~assets/fonts/#{$primary-font}/#{$primary-font}-Light.ttf') format('truetype');
   font-weight: $font-weight--light;
   font-style: normal;
   font-display: optional;
@@ -29,11 +29,11 @@
 
 @font-face {
   font-family: $primary-font;
-  src: local('#{$primary-font}-SemiBold'), 
+  src: local('#{$primary-font}-SemiBold'),
        local('#{$primary-font} SemiBold'),
-       url('~fonts/#{$primary-font}/#{$primary-font}-SemiBold.woff2') format('woff2'),  
-       url('~fonts/#{$primary-font}/#{$primary-font}-SemiBold.woff') format('woff'),        
-       url('~fonts/#{$primary-font}/#{$primary-font}-SemiBold.ttf') format('truetype');
+       url('~assets/fonts/#{$primary-font}/#{$primary-font}-SemiBold.woff2') format('woff2'),
+       url('~assets/fonts/#{$primary-font}/#{$primary-font}-SemiBold.woff') format('woff'),
+       url('~assets/fonts/#{$primary-font}/#{$primary-font}-SemiBold.ttf') format('truetype');
   font-weight: $font-weight--semibold;
   font-style: normal;
   font-display: optional;
@@ -41,11 +41,11 @@
 
 @font-face {
   font-family: $primary-font;
-  src: local('#{$primary-font}-Bold'), 
+  src: local('#{$primary-font}-Bold'),
        local('#{$primary-font} Bold'),
-       url('~fonts/#{$primary-font}/#{$primary-font}-Bold.woff2') format('woff2'), 
-       url('~fonts/#{$primary-font}/#{$primary-font}-Bold.woff') format('woff'),         
-       url('~fonts/#{$primary-font}/#{$primary-font}-Bold.ttf') format('truetype');
+       url('~assets/fonts/#{$primary-font}/#{$primary-font}-Bold.woff2') format('woff2'),
+       url('~assets/fonts/#{$primary-font}/#{$primary-font}-Bold.woff') format('woff'),
+       url('~assets/fonts/#{$primary-font}/#{$primary-font}-Bold.ttf') format('truetype');
   font-weight: $font-weight--bold;
   font-style: normal;
   font-display: optional;

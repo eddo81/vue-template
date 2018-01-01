@@ -81,14 +81,14 @@
             </p>
             <form>
               <v-textfield id="textfield2" name="textfield2" label="has label"></v-textfield>
-              <v-select id="select2" label="select2" name="select2">   
+              <v-select id="select2" label="select2" name="select2">
                 <option disabled selected>Flavors</option>
                 <option>Chocolate</option>
                 <option>Vanilla</option>
               </v-select>
               <v-radio name="example" value="Cone" label="Cone"></v-radio>
               <v-radio name="example" value="Bowl" label="Bowl"></v-radio>
-              <v-textarea label="Special Requests" name="Special Requests" placeholder="hej"></v-textarea>     
+              <v-textarea label="Special Requests" name="Special Requests" placeholder="hej"></v-textarea>
               <v-checkbox name="Sprinkles" value="Sprinkles" label="Sprinkles"></v-checkbox>
               <br>
               <input type="submit" value="Place Order">
@@ -221,7 +221,7 @@
         Paragraph
       </p>
       <h2>Headline 2</h2>
-      <ul>
+      <ul class="list--disc">
         <li>Unordered item</li>
         <li>Unordered item</li>
         <li>Unordered item</li>

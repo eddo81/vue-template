@@ -17,10 +17,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': _CONFIG.resolve(_CONFIG.directories.entry.framework),
-      'img': _CONFIG.resolve(_CONFIG.directories.entry.images),
-      'media': _CONFIG.resolve(_CONFIG.directories.entry.media),
-      'scss': _CONFIG.resolve(_CONFIG.directories.entry.scss),
-      'fonts': _CONFIG.resolve(_CONFIG.directories.entry.fonts)
+      'assets': _CONFIG.resolve(_CONFIG.directories.entry.assets)
     }
   },
   devtool: (_CONFIG.env.debug) ? '#cheap-module-eval-source-map' : '#source-map',
