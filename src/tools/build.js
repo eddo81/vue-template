@@ -1,28 +1,25 @@
 require('./utils/check-versions')();
 
-const ora = require('ora');
 const rm = require('rimraf');
-const chalk = require('chalk');
 const webpack = require('webpack');
 const _CONFIG = require('./config');
 const webpackConfig = require('./webpack/webpack.prod.conf');
+const utils = require('./utils/utils.js');
 
-const spinner = ora('building for production...');
-spinner.start();
+console.log(utils.color.cyan('building for production...'));
 
 rm(_CONFIG.resolve(_CONFIG.directories.output.public), err => {
-  
+
   if (err) {
     throw err;
   }
-  
-  webpack(webpackConfig, function (err, stats) {    
-    spinner.stop();
-    
+
+  webpack(webpackConfig, function (err, stats) {
+
     if (err) {
       throw err;
-    } 
-    
+    }
+
     process.stdout.write(stats.toString({
       colors: true,
       modules: false,
@@ -31,12 +28,11 @@ rm(_CONFIG.resolve(_CONFIG.directories.output.public), err => {
       chunkModules: false
     }) + '\n\n');
 
-    console.log(chalk.cyan('  Build complete.\n'));
+    console.log(utils.color.cyan('  Build complete.\n'));
 
-    console.log(chalk.yellow(
+    console.log(utils.color.yellow(
       '  Tip: built files are meant to be served over an HTTP server.\n' +
       '  Opening index.html over file:// won\'t work.\n'
     ));
-
   });
 })
