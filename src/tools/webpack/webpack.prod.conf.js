@@ -94,12 +94,4 @@ let webpackConfig = merge(baseWebpackConfig, {
   ]
 });
 
-// Run the build command with an extra argument to
-// View the bundle analyzer report after build finishes:
-// npm run build --report
-if (process.env.npm_config_report) {
-  const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-  webpackConfig.plugins.push(new BundleAnalyzerPlugin());
-}
-
 module.exports = webpackConfig;
