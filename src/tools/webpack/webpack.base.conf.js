@@ -81,7 +81,7 @@ module.exports = {
   plugins: [
 
     new webpack.DefinePlugin({
-      'process.env': { NODE_ENV: _CONFIG.env.mode, CONFIG: JSON.stringify(require('../config').prod) }
+      'process.env': { NODE_ENV: _CONFIG.env.mode, APP_NAME: JSON.stringify(_CONFIG.appname) }
     }),
 
     new HtmlWebpackPlugin({

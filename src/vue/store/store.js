@@ -31,10 +31,10 @@ const Store = new Vuex.Store({
   mutations: {
 
     SET_PAGE_TITLE: function(state, titleSuffix) {
-      let pageTitle = process.env.CONFIG.appname || '';
+      let pageTitle = process.env.APP_NAME || '';
       let pageTitleSeparator = (pageTitle) ? ' | ' : '';
       let pageTitleSuffix = (titleSuffix !== undefined) ? pageTitleSeparator + titleSuffix : '';
-      
+
       state.page.title = `${pageTitle + pageTitleSuffix}`;
     },
 

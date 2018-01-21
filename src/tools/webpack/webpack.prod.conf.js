@@ -1,7 +1,6 @@
 const utils = require('../utils/utils');
 const webpack = require('webpack');
 const _CONFIG = require('../config');
-const _SEED = require('../manifest');
 const merge = require('webpack-merge');
 const baseWebpackConfig = require('./webpack.base.conf');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -72,7 +71,7 @@ let webpackConfig = merge(baseWebpackConfig, {
     new ManifestPlugin({
       fileName: _CONFIG.filenames.entry.manifest,
       basePath: '',
-      seed: _SEED
+      seed: _CONFIG.manifest
     }),
 
     // service worker caching
