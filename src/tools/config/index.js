@@ -96,7 +96,7 @@ const _MANIFEST = {
     `./${_DIRECTORIES.entry.icons}`
   ].filter(directory => fs.existsSync(directory)).map(directory => fs.readdirSync(directory).filter(icon => { return _PATH.extname(icon).match(_EXTENSIONS.images)}) )
   ).map(icon => { const dimentions = _IMGSIZE(_DIRECTORIES.entry.icons + icon); return  {src: _DIRECTORIES.output.icons + icon, sizes: `${dimentions.width}x${dimentions.height}`, type: `image/${_PATH.extname(icon).replace(/\W*/, '')}`}; }),
-  start_url: "/",
+  start_url: _FILENAMES.output.html,
   display: 'standalone',
   orientation: 'portrait',
   background_color: '#000000',
